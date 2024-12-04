@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Roboto:wght@500&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(#006eff, #002eff), url("");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    font-family: "League Spartan", sans-serif;
+    
+}
+
+.container{
+    max-width: 1400px;
+    padding: 3%;
+    margin: 0 auto;
+
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .logo{
+    font-size: 35px;
+    font-style: italic;
+    color: white;
+    font-weight: bold;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav ul li{
+    display: inline-block;
+}
+
+nav ul li a{
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 19px;
+    color: white;
+    border-radius: 30px;
+    transition: 0.6s;
+}
+
+nav ul li a:hover{
+    background-color: #006eff;
+    color: white;
+}
+
+.description-container {
+    max-width: 400px;
+    color: white;
+    text-align: justify;
+}
+  
+.description-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+  
+.description-container p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.container-primary {
+    display: flex; /* Alinha o formulário e a imagem lado a lado */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 100%; /* Usa 100% da altura do body */
+    gap: 20px; /* Espaço entre os itens */
+  }
+  
+  .form-container {
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo semitransparente */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .question {
+    margin-bottom: 25px;
+  }
+  
+  .options {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  
+  button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .image-container img {
+    width: 484px; /* Ajuste o tamanho da imagem conforme necessário */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  a{
+    color: white;
+    text-decoration: none;
+  }
+
+  a:hover{
+    color: #006eff;
+  }
