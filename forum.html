@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Innova</title>
+    <link rel="stylesheet" href="css/forum.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <span>InnovaHub</span>
+            </div>
+            <ul>
+                <li><a href="main2.html">Início</a></li>
+                <li><a href="marcarConsultpag.html">Atendimento</a></li>
+                <li><a href="forum.html">Fórum</a></li>
+                <li><a href="sobrenospag.html">Sobre Nós</a></li>
+            </ul>
+        </nav>
+
+        <!-- Fórum Container -->
+        <div class="forum-container">
+            <h2>Fórum de Discussões</h2>
+
+            <!-- Formulário para Enviar Mensagem -->
+            <form class="message-form" id="messageForm">
+                <textarea id="messageInput" placeholder="Digite sua mensagem..."></textarea>
+                <button type="submit">Enviar Mensagem</button>
+            </form>
+
+            <!-- Mensagens do Fórum -->
+            <div class="messages-container" id="messagesContainer">
+                <!-- Mensagens serão inseridas aqui dinamicamente -->
+            </div>
+        </div>
+    </div>
+
+    <script src="js/forum.js"></script>
+</body>
+</html>

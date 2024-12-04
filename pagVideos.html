@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Innova</title>
+    <link rel="stylesheet" href="css/pagVid.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Side Navigation Menu -->
+        <div class="side-nav">
+            
+            <h2>Vídeo com Especialistas</h2>
+            <ul>
+                <li><a href="#" onclick="changeVideo('video1')">Ansiedade</a></li>
+                <li><a href="#" onclick="changeVideo('video2')">Pânico</a></li>
+                <li><a href="#" onclick="changeVideo('video3')">Depressão</a></li>
+                <li><a href="#" onclick="changeVideo('video4')">Transtornos</a></li>
+                <li><a href="#" onclick="changeVideo('video5')">Psicoterapia</a></li>
+            </ul>
+            <button class="back-btn"><a href="main2.html">Voltar</a></button>
+        </div>
+
+        <!-- Video Display Area -->
+        <div class="video-container">
+            <div id="video1" class="video-item" style="display: none;">
+                <h3>Entendendo a Ansiedade: Causas, Sintomas e Como Controlar</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Pmh9No4Mdts?si=yqy4N7A99tdgqQm_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div id="video2" class="video-item" style="display: none;">
+                <h3>Como Combater o Pânico: Técnicas de Enfrentamento com Profissionais da Saúde</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/KqpzmpHvvXw?si=YJ5rmZCIAmu6GLV-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div id="video3" class="video-item" style="display: none;">
+                <h3>Depressão: Sinais, Sintomas e Tratamentos Eficazes</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/EiEkt529rBA?si=LmVYuskrmAJFon-a" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div id="video4" class="video-item" style="display: none;">
+                <h3>Transtorno de Ansiedade Generalizada: Como Lidar com a Preocupação Excessiva</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/d-fPfxNOVlw?si=HLEcVMRubxr_G9Am" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div id="video5" class="video-item" style="display: none;">
+                <h3>Cuidando da Mente: Como a Psicoterapia Pode Ajudar no Tratamento de Transtornos Mentais</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/wHx5nIiN2UQ?si=CxATSaYSOw6A6NuG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <script>
+        function changeVideo(videoId) {
+            // Esconde todos os vídeos
+            const videos = document.querySelectorAll('.video-item');
+            videos.forEach(video => {
+                video.style.display = 'none';
+            });
+
+            // Exibe o vídeo selecionado
+            const selectedVideo = document.getElementById(videoId);
+            selectedVideo.style.display = 'block';
+        }
+    </script>
+</body>
+</html>

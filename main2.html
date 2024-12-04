@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Innova</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="stylesheet" href="css/main2.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <span>InnovaHub.</span>
+            </div>
+            <ul>
+                <li><a href="main2.html">Início</a></li>
+                <li><a href="marcarConsultpag.html">Atendimento</a></li>
+                <li><a href="forum.html">Fórum</a></li>
+                <li><a href="sobrenospag.html">Sobre Nós</a></li>
+            </ul>
+        </nav>
+    </div>
+      <!-- Carrossel -->
+      <div class="carousel-container">
+        <div class="carousel">
+            <!-- Slide 1: Atendimento -->
+            <div class="carousel-item">
+                <h2>Atendimento</h2>
+                <p>Oferecemos suporte especializado para você.</p>
+                <a href="marcarConsultpag.html"><img src="imgs/rb_2147793644.png" alt="Atendimento"></a>
+            </div>
+            <!-- Slide 2: Fórum -->
+            <div class="carousel-item">
+                <h2>Fórum</h2>
+                <p>Participe de discussões sobre temas importantes.</p>
+                <a href="forum.html"><img src="imgs/rb_2147681588.png" alt="Fórum"></a>
+            </div>
+            <!-- Slide 3: Vídeos -->
+            <div class="carousel-item">
+                <h2>Vídeos</h2>
+                <p>Assista a vídeos sobre diversos assuntos.</p>
+                <a href="pagVideos.html"><img src="imgs/rb_2148519050.png" alt="Vídeos"></a>
+            </div>
+        </div>
+
+        <!-- Controles do carrossel -->
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+</div>
+
+<script>
+    let slideIndex = 0;
+
+    function moveSlide(direction) {
+        const slides = document.querySelectorAll('.carousel-item');
+        slideIndex += direction;
+        if (slideIndex >= slides.length) slideIndex = 0;
+        if (slideIndex < 0) slideIndex = slides.length - 1;
+        showSlide();
+    }
+
+    function showSlide() {
+        const slides = document.querySelectorAll('.carousel-item');
+        slides.forEach((slide, index) => {
+            slide.style.display = (index === slideIndex) ? 'block' : 'none';
+        });
+    }
+
+    showSlide(); // Mostrar o primeiro slide ao carregar
+</script>
+</body>

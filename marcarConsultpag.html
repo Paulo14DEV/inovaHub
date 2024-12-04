@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Innova</title>
+    <link rel="stylesheet" href="css/marcarConcult.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <span>InnovaHub</span>
+            </div>
+            <ul>
+                <li><a href="main2.html">Início</a></li>
+                <li><a href="marcarConsultpag.html">Atendimento</a></li>
+                <li><a href="forum.html">Fórum</a></li>
+                <li><a href="sobrenospag.html">Sobre Nós</a></li>
+            </ul>
+        </nav>
+
+        <div class="consulta-container">
+            <h2>Marcar Consulta</h2>
+
+            <!-- Seleção do Especialista -->
+            <div class="especialistas">
+                <label for="especialistaSelect">Escolha um Especialista:</label>
+                <select id="especialistaSelect">
+                    <option value="psicologo">Psicólogo</option>
+                    <option value="psiquiatra">Psiquiatra</option>
+                    <option value="terapeuta">Terapeuta</option>
+                </select>
+            </div>
+
+            <!-- Disponibilidade de Horários -->
+            <div class="horarios">
+                <h3>Horários Disponíveis</h3>
+                <ul id="horariosDisponiveis">
+                    <!-- Horários serão inseridos aqui dinamicamente -->
+                </ul>
+            </div>
+
+            <!-- Formulário para Marcação -->
+            <div class="form-marcacao">
+                <label for="dataConsulta">Data da Consulta:</label>
+                <input type="date" id="dataConsulta">
+                <button id="marcarConsultaBtn">Marcar Consulta</button>
+            </div>
+
+            <!-- Confirmação -->
+            <div id="confirmacao" style="display: none;">
+                <h4>Consulta marcada com sucesso!</h4>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/marcarConsult.js"></script>
+</body>
+</html>
